@@ -35,4 +35,8 @@
 `git log` Shows list of committed files and their time of modification
 
 > ### Purpose of `.gitignore`
-> If 'git status' is entered into a terminal, it shows all files that are untracked files and or files to be committed. If the author wishes to have certain untracked files completely ignored by git, to the point of not even showing up on the list of untracked files (in essence, incognito), they would put it into whats known as a '.gitignore' file. This is useful for when multiple people are working on code and dont want certain files in different depositories to override each other. Each line in a '.gitignore' file represents a pattern that gets cross checked with multiple sources in the directory tree before ignoring a path.
+> If `git status` is entered into a terminal, it shows all files that are untracked files and or files to be committed. If the author wishes to have certain untracked files completely ignored by git, to the point of not even showing up on the list of untracked files (in essence, incognito), they would put it into what's known as a `.gitignore` file. This is useful for when multiple people are working on code and dont want certain files in different depositories to override each other. Each line in a `.gitignore` file represents a pattern that gets cross checked with multiple sources in the directory tree before ignoring a path. This repository has an example `.gitignore` file that has made git completely ignore pom.xml.
+
+>`.gitignore` cannot affect its parent folder which is why the `.idea` file is still tracked when `git status` is invoked
+
+
